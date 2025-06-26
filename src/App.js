@@ -1,23 +1,28 @@
-import logo from './logo.svg';
 import './App.css';
+import { useState, useEffect } from 'react';
+import Intro from './components/Intro';
+import NavHead from './components/Nav';
+import Gallery from './components/Gallery';
+import Footer from './components/Footer';
+import Comment from './components/Comment';
+import SplashCursor from './components/SplashCursor';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
+
+  const [isNightMode, setIsNightMode] = useState(false);
+  useEffect(() => {
+    document.body.style.backgroundColor = isNightMode ? '#210F37' : 'white';
+  }, [isNightMode]);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <SplashCursor />
+      <NavHead isNightMode={isNightMode} setIsNightMode={setIsNightMode} />
+      <Intro />
+      <Gallery isNightMode={isNightMode} />
+      <Comment isNightMode={isNightMode} />
+      <Footer />
     </div>
   );
 }
