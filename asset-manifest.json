@@ -1,0 +1,43 @@
+{
+  "files": {
+    "main.css": "/gallery-ultra/static/css/main.7bad9f08.css",
+    "main.js": "/gallery-ultra/static/js/main.b0c35ebc.js",
+    "static/js/453.03169847.chunk.js": "/gallery-ultra/static/js/453.03169847.chunk.js",
+    "static/media/ultraman-nexus.png": "/gallery-ultra/static/media/ultraman-nexus.d929d1c74ed1f8cdb72c.png",
+    "static/media/ultraman-dyna.png": "/gallery-ultra/static/media/ultraman-dyna.734daf83e3c3637c5a5e.png",
+    "static/media/ultraman-x.png": "/gallery-ultra/static/media/ultraman-x.32c0dc83a35c549dd11c.png",
+    "static/media/ultraman-mebius.png": "/gallery-ultra/static/media/ultraman-mebius.98f2be413f1302490c02.png",
+    "static/media/ultraman-ginga.png": "/gallery-ultra/static/media/ultraman-ginga.3e3c83ea8fc68b993a4c.png",
+    "static/media/ultraman-max.png": "/gallery-ultra/static/media/ultraman-max.7ee6054b20fce6d42ebc.png",
+    "static/media/ultraman-gaia.png": "/gallery-ultra/static/media/ultraman-gaia.c421ac87226ed297ec9b.png",
+    "static/media/ultraman-shin.png": "/gallery-ultra/static/media/ultraman-shin.437656cb3c6ba630d5be.png",
+    "static/media/ultraman-rosso.png": "/gallery-ultra/static/media/ultraman-rosso.1aa3595fd6e4918d9c64.png",
+    "static/media/ultraman-leo.png": "/gallery-ultra/static/media/ultraman-leo.68cc107f6b20182c9906.png",
+    "static/media/ultraman-z.png": "/gallery-ultra/static/media/ultraman-z.1debec807264b1aec80b.png",
+    "static/media/ultraman-tiga.png": "/gallery-ultra/static/media/ultraman-tiga.3e1b6840786ffb6198e8.png",
+    "static/media/father-of-ultra.png": "/gallery-ultra/static/media/father-of-ultra.a7db836ecb39a271cc93.png",
+    "static/media/ultraman-cosmos.png": "/gallery-ultra/static/media/ultraman-cosmos.7c76b75ce71bea23ced0.png",
+    "static/media/ultraman-blazar.png": "/gallery-ultra/static/media/ultraman-blazar.bbba3854978ba3aaeb67.png",
+    "static/media/ultraman-agul.png": "/gallery-ultra/static/media/ultraman-agul.44aebf998ccf5f4c1bc1.png",
+    "static/media/astra.png": "/gallery-ultra/static/media/astra.a56cc4c1eb1c677e4a31.png",
+    "static/media/ultraseven.png": "/gallery-ultra/static/media/ultraseven.46493bf7d722aee945e0.png",
+    "static/media/ultraman-taro.png": "/gallery-ultra/static/media/ultraman-taro.31a06f9014d1e24af2c6.png",
+    "static/media/ultraman-jack.png": "/gallery-ultra/static/media/ultraman-jack.13f593572c950054b06f.png",
+    "static/media/ultraman-geed.png": "/gallery-ultra/static/media/ultraman-geed.87747fec75a948ca065c.png",
+    "static/media/ultraman-taiga.png": "/gallery-ultra/static/media/ultraman-taiga.401fee3c0f6ab6e3d29d.png",
+    "static/media/zoffy.png": "/gallery-ultra/static/media/zoffy.3c0943841af518575b83.png",
+    "static/media/ultraman-zero.png": "/gallery-ultra/static/media/ultraman-zero.f8b2ace627614b4b976e.png",
+    "static/media/ultraman-ace.png": "/gallery-ultra/static/media/ultraman-ace.0411feec1dd316c70449.png",
+    "static/media/ultraman-blu.png": "/gallery-ultra/static/media/ultraman-blu.625c6f70bde5926b6c26.png",
+    "static/media/ultraman-orb.png": "/gallery-ultra/static/media/ultraman-orb.b47e734cffa401575a67.png",
+    "static/media/ultraman.jpg": "/gallery-ultra/static/media/ultraman.ac631a88eda63621510d.jpg",
+    "index.html": "/gallery-ultra/index.html",
+    "main.7bad9f08.css.map": "/gallery-ultra/static/css/main.7bad9f08.css.map",
+    "main.b0c35ebc.js.map": "/gallery-ultra/static/js/main.b0c35ebc.js.map",
+    "453.03169847.chunk.js.map": "/gallery-ultra/static/js/453.03169847.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7bad9f08.css",
+    "static/js/main.b0c35ebc.js"
+  ]
+}
