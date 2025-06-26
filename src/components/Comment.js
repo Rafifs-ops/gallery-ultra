@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
 import { Button, Col, Container, Row, Image } from "react-bootstrap"
+import WebFont from "webfontloader"
 
 const Comment = ({ isNightMode }) => {
 
