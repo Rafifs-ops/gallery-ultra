@@ -35,12 +35,18 @@ const Comment = ({ isNightMode }) => {
         color: isNightMode ? 'white' : 'black',
     };
 
+    WebFont.load({
+            google: {
+                families: ['Bungee Spice', 'sans-serif']
+            }
+    });
+
 
     return (
         <Container>
             <Row>
                 <Col md={12}>
-                    <h1 className="text-center">Comments</h1>
+                    <h1 className="text-center" style={{ fontFamily: 'Bungee Spice, sans-serif' }}>Comments</h1>
                 </Col>
             </Row>
             <Row className="justify-content-center" style={commentStyle}>
