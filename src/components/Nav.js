@@ -7,7 +7,7 @@ const NavHead = ({ isNightMode, setIsNightMode }) => {
   return (
     <Navbar bg="dark" data-bs-theme="dark" sticky="top">
       <Container>
-        <Navbar.Brand href="#home">
+        <Navbar.Brand as={Link} to="/">
           <img
             src={logoNav}
             width="30"
@@ -21,9 +21,10 @@ const NavHead = ({ isNightMode, setIsNightMode }) => {
             <NavDropdown.Item href="#showa">Showa</NavDropdown.Item>
             <NavDropdown.Item href="#heisei">Heisei</NavDropdown.Item>
             <NavDropdown.Item href="#reiwa">Reiwa</NavDropdown.Item>
-            <Link to="/EvilUltra" style={{ marginRight: '1rem' }}>
+            <NavDropdown.Divider />
+            <NavDropdown.Item as={Link} to="/EvilUltra">
               EvilUltra
-            </Link>
+            </NavDropdown.Item>
           </NavDropdown>
           {isNightMode ? (
             <Button variant="warning" onClick={() => setIsNightMode(false)}>
@@ -42,4 +43,3 @@ const NavHead = ({ isNightMode, setIsNightMode }) => {
 }
 
 export default React.memo(NavHead);
-

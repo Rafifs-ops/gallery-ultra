@@ -1,5 +1,5 @@
 import './App.css';
-import { Routes, Route, BrowserRouter } from 'react-router-dom';
+import { Routes, Route, HashRouter } from 'react-router-dom';
 import EvilUltra from './components/pages/EvilUltra';
 import Home from './components/pages/Home';
 import SplashCursor from './components/SplashCursor';
@@ -9,12 +9,13 @@ function App() {
 
   return (
     <div>
-      <BrowserRouter>
+      <HashRouter>
         <Routes>
+          <Route path="/" element={<Home />} />
           <Route path="/Home" element={<Home />} />
           <Route path="/EvilUltra" element={<EvilUltra />} />
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
       <SplashCursor />
     </div>
   );
