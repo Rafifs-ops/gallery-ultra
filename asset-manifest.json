@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/gallery-ultra/static/css/main.66632c4f.css",
-    "main.js": "/gallery-ultra/static/js/main.d175e793.js",
+    "main.js": "/gallery-ultra/static/js/main.5d55291c.js",
     "static/js/453.03169847.chunk.js": "/gallery-ultra/static/js/453.03169847.chunk.js",
     "static/media/ultraman-nexus.png": "/gallery-ultra/static/media/ultraman-nexus.d929d1c74ed1f8cdb72c.png",
     "static/media/ultraman-dyna.png": "/gallery-ultra/static/media/ultraman-dyna.734daf83e3c3637c5a5e.png",
@@ -34,11 +34,11 @@
     "static/media/ultraman.jpg": "/gallery-ultra/static/media/ultraman.ac631a88eda63621510d.jpg",
     "index.html": "/gallery-ultra/index.html",
     "main.66632c4f.css.map": "/gallery-ultra/static/css/main.66632c4f.css.map",
-    "main.d175e793.js.map": "/gallery-ultra/static/js/main.d175e793.js.map",
+    "main.5d55291c.js.map": "/gallery-ultra/static/js/main.5d55291c.js.map",
     "453.03169847.chunk.js.map": "/gallery-ultra/static/js/453.03169847.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.66632c4f.css",
-    "static/js/main.d175e793.js"
+    "static/js/main.5d55291c.js"
   ]
 }
