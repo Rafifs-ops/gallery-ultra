@@ -1,3 +1,4 @@
+import React from "react"
 import WebFont from "webfontloader";
 import SplitText from './SplitText';
 
@@ -37,4 +38,4 @@ const Intro = () => {
     )
 }
 
-export default Intro
+export default React.memo(Intro);

@@ -1,10 +1,20 @@
+import React from "react"
 import { Nav, Container, Navbar, Button, NavDropdown } from "react-bootstrap"
+import logoNav from "./img/logo-nav.png"
 
 const NavHead = ({ isNightMode, setIsNightMode }) => {
   return (
     <Navbar bg="dark" data-bs-theme="dark" sticky="top">
       <Container>
-        <Navbar.Brand href="#home">Gallery Ultra</Navbar.Brand>
+        <Navbar.Brand href="#home">
+          <img
+              src={logoNav}
+              width="30"
+              height="30"
+              className="d-inline-block align-top"
+              alt="React Bootstrap logo"
+            />{' '}Gallery Ultra
+        </Navbar.Brand>
         <Nav className="ms-auto">
           <NavDropdown title="Season" id="basic-nav-dropdown">
             <NavDropdown.Item href="#showa">Showa</NavDropdown.Item>
@@ -26,5 +36,5 @@ const NavHead = ({ isNightMode, setIsNightMode }) => {
   )
 }
 
-export default NavHead
+export default React.memo(NavHead);
 

@@ -12,8 +12,13 @@ function App() {
 
   const [isNightMode, setIsNightMode] = useState(false);
   useEffect(() => {
-    document.body.style.backgroundColor = isNightMode ? '#210F37' : 'white';
+    if (isNightMode) {
+      document.body.classList.add('night-mode');
+    } else {
+      document.body.classList.remove('night-mode');
+    }
   }, [isNightMode]);
+
 
   return (
     <div>

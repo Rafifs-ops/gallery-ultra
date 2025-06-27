@@ -1,3 +1,4 @@
+import React from "react"
 import { useEffect, useState } from "react"
 import { Button, Col, Container, Row, Image } from "react-bootstrap"
 import WebFont from "webfontloader"
@@ -31,11 +32,8 @@ const Comment = ({ isNightMode }) => {
         fetch('https://dummyjson.com/users/' + count).then(g => g.json()).then(foto => setImg(foto))
     }, [count]);
 
-    const commentStyle = {
-        backgroundColor: isNightMode ? '#210F37' : 'white',
-        color: isNightMode ? 'white' : 'black',
-    };
-
+    const commentStyle = isNightMode ? 'comment-night-mode' : '';
+ 
     WebFont.load({
             google: {
                 families: ['Bungee Spice', 'sans-serif']
@@ -50,7 +48,7 @@ const Comment = ({ isNightMode }) => {
                     <h1 className="text-center" style={{ fontFamily: 'Bungee Spice, sans-serif' }}>Comments</h1>
                 </Col>
             </Row>
-            <Row className="justify-content-center" style={commentStyle}>
+            <Row className={`justify-content-center ${commentStyle}`}>
                 <Col md={'auto'} className="shadow rounded m-5 p-3 text-center" style={{width: 300, height:400}}>
                     {img && <Image src={img.image} roundedCircle  width={200} height={200}/>}
                     {!img && <div style={{height: 200}}><p>Loading...</p></div>}
@@ -63,4 +61,4 @@ const Comment = ({ isNightMode }) => {
     )
 }
 
-export default Comment
+export default React.memo(Comment);

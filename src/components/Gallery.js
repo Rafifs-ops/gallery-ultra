@@ -1,3 +1,4 @@
+import React from "react"
 import { Card, Col, Container, Row } from "react-bootstrap"
 import AnimatedContent from "./AnimatedContent"
 import WebFont from "webfontloader"
@@ -37,11 +38,7 @@ const Gallery = ({ isNightMode }) => {
         }
     });
 
-    const cardStyle = {
-        backgroundColor: isNightMode ? '#210F37' : 'white',
-        color: isNightMode ? 'white' : 'black',
-        border: 'none'
-    };
+    const cardStyle = isNightMode ? 'card-night-mode' : '';
 
     return (
         <Container>
@@ -61,7 +58,7 @@ const Gallery = ({ isNightMode }) => {
                         delay={0.3}
                     >
                         <div>
-                            <Card className="m-3" style={cardStyle}>
+                            <Card className={`m-3 ${cardStyle}`}>
                                 <Card.Img variant="top" src={ultramanShin} height={500} />
                                 <Card.Body>
                                     <Card.Title className="text-center">Ultraman</Card.Title>
@@ -69,13 +66,13 @@ const Gallery = ({ isNightMode }) => {
                             </Card>
                         </div>
                     </AnimatedContent>
-                    <Card className="m-3" style={cardStyle}>
+                    <Card className={`m-3 ${cardStyle}`}>
                         <Card.Img variant="top" src={ultrseven} height={500} />
                         <Card.Body>
                             <Card.Title className="text-center">Ultraseven</Card.Title>
                         </Card.Body>
                     </Card>
-                    <Card className="m-3" style={cardStyle}>
+                    <Card className={`m-3 ${cardStyle}`}>
                         <Card.Img variant="top" src={ultramanJack} height={500} />
                         <Card.Body>
                             <Card.Title className="text-center">Ultraman Jack</Card.Title>
@@ -96,7 +93,7 @@ const Gallery = ({ isNightMode }) => {
                         delay={0.3}
                     >
                         <div>
-                            <Card className="m-3" style={cardStyle}>
+                            <Card className={`m-3 ${cardStyle}`}>
                                 <Card.Img variant="top" src={ultramanAce} height={500} />
                                 <Card.Body>
                                     <Card.Title className="text-center">Ultraman Ace</Card.Title>
@@ -104,13 +101,13 @@ const Gallery = ({ isNightMode }) => {
                             </Card>
                         </div>
                     </AnimatedContent>
-                    <Card className="m-3" style={cardStyle}>
+                    <Card className={`m-3 ${cardStyle}`}>
                         <Card.Img variant="top" src={ultramanTaro} height={500} />
                         <Card.Body>
                             <Card.Title className="text-center">Ultraman Taro</Card.Title>
                         </Card.Body>
                     </Card>
-                    <Card className="m-3" style={cardStyle}>
+                    <Card className={`m-3 ${cardStyle}`}>
                         <Card.Img variant="top" src={ultramanLeo} height={500} />
                         <Card.Body>
                             <Card.Title className="text-center">Ultraman Leo</Card.Title>
@@ -131,7 +128,7 @@ const Gallery = ({ isNightMode }) => {
                         delay={0.3}
                     >
                         <div>
-                            <Card className="m-3" style={cardStyle}>
+                            <Card className={`m-3 ${cardStyle}`}>
                                 <Card.Img variant="top" src={Zoffy} height={500} />
                                 <Card.Body>
                                     <Card.Title className="text-center">Zoffy</Card.Title>
@@ -139,13 +136,13 @@ const Gallery = ({ isNightMode }) => {
                             </Card>
                         </div>
                     </AnimatedContent>
-                    <Card className="m-3" style={cardStyle}>
+                    <Card className={`m-3 ${cardStyle}`}>
                         <Card.Img variant="top" src={astra} height={500} />
                         <Card.Body>
                             <Card.Title className="text-center">Astra</Card.Title>
                         </Card.Body>
                     </Card>
-                    <Card className="m-3" style={cardStyle}>
+                    <Card className={`m-3 ${cardStyle}`}>
                         <Card.Img variant="top" src={fatherOfUltra} height={500} />
                         <Card.Body>
                             <Card.Title className="text-center">Father of Ultra</Card.Title>
@@ -156,19 +153,19 @@ const Gallery = ({ isNightMode }) => {
             <Row className="mt-4 mb-4 p-3">
                 <h1 className="text-center" id="heisei" style={{ fontFamily: 'Bungee Spice, sans-serif' }}>HEISEI</h1>
                 <Col md={4}>
-                    <Card className="m-3" style={cardStyle}>
+                    <Card className={`m-3 ${cardStyle}`}>
                         <Card.Img variant="top" src={ultramanTiga} height={500} />
                         <Card.Body>
                             <Card.Title className="text-center">Ultraman Tiga</Card.Title>
                         </Card.Body>
                     </Card>
-                    <Card className="m-3" style={cardStyle}>
+                    <Card className={`m-3 ${cardStyle}`}>
                         <Card.Img variant="top" src={ultramanDyna} height={500} />
                         <Card.Body>
                             <Card.Title className="text-center">Ultraman Dyna</Card.Title>
                         </Card.Body>
                     </Card>
-                    <Card className="m-3" style={cardStyle}>
+                    <Card className={`m-3 ${cardStyle}`}>
                         <Card.Img variant="top" src={ultramanGaia} height={500} />
                         <Card.Body>
                             <Card.Title className="text-center">Ultraman Gaia</Card.Title>
@@ -176,19 +173,19 @@ const Gallery = ({ isNightMode }) => {
                     </Card>
                 </Col>
                 <Col md={4}>
-                    <Card className="m-3" style={cardStyle}>
+                    <Card className={`m-3 ${cardStyle}`}>
                         <Card.Img variant="top" src={ultramanAgul} height={500} />
                         <Card.Body>
                             <Card.Title className="text-center">Ultraman Agul</Card.Title>
                         </Card.Body>
                     </Card>
-                    <Card className="m-3" style={cardStyle}>
+                    <Card className={`m-3 ${cardStyle}`}>
                         <Card.Img variant="top" src={ultramanCosmos} height={500} />
                         <Card.Body>
                             <Card.Title className="text-center">Ultraman Cosmos</Card.Title>
                         </Card.Body>
                     </Card>
-                    <Card className="m-3" style={cardStyle}>
+                    <Card className={`m-3 ${cardStyle}`}>
                         <Card.Img variant="top" src={ultramanNexus} height={500} />
                         <Card.Body>
                             <Card.Title className="text-center">Ultraman Nexus</Card.Title>
@@ -196,19 +193,19 @@ const Gallery = ({ isNightMode }) => {
                     </Card>
                 </Col>
                 <Col md={4}>
-                    <Card className="m-3" style={cardStyle}>
+                    <Card className={`m-3 ${cardStyle}`}>
                         <Card.Img variant="top" src={ultramanMax} height={500} />
                         <Card.Body>
                             <Card.Title className="text-center">Ultraman Max</Card.Title>
                         </Card.Body>
                     </Card>
-                    <Card className="m-3" style={cardStyle}>
+                    <Card className={`m-3 ${cardStyle}`}>
                         <Card.Img variant="top" src={ultramanMebius} height={500} />
                         <Card.Body>
                             <Card.Title className="text-center">Ultraman Mebius</Card.Title>
                         </Card.Body>
                     </Card>
-                    <Card className="m-3" style={cardStyle}>
+                    <Card className={`m-3 ${cardStyle}`}>
                         <Card.Img variant="top" src={ultramanZero} height={500} />
                         <Card.Body>
                             <Card.Title className="text-center">Ultraman Zero</Card.Title>
@@ -219,19 +216,19 @@ const Gallery = ({ isNightMode }) => {
             <Row className="mt-4 mb-4 p-3">
                 <h1 className="text-center" id="reiwa" style={{ fontFamily: 'Bungee Spice, sans-serif' }}>REIWA</h1>
                 <Col md={4}>
-                    <Card className="m-3" style={cardStyle}>
+                    <Card className={`m-3 ${cardStyle}`}>
                         <Card.Img variant="top" src={ultramanGinga} height={500} />
                         <Card.Body>
                             <Card.Title className="text-center">Ultraman Ginga</Card.Title>
                         </Card.Body>
                     </Card>
-                    <Card className="m-3" style={cardStyle}>
+                    <Card className={`m-3 ${cardStyle}`}>
                         <Card.Img variant="top" src={ultramanX} height={500} />
                         <Card.Body>
                             <Card.Title className="text-center">Ultraman X</Card.Title>
                         </Card.Body>
                     </Card>
-                    <Card className="m-3" style={cardStyle}>
+                    <Card className={`m-3 ${cardStyle}`}>
                         <Card.Img variant="top" src={ultramanOrb} height={500} />
                         <Card.Body>
                             <Card.Title className="text-center">Ultraman Orb</Card.Title>
@@ -239,19 +236,19 @@ const Gallery = ({ isNightMode }) => {
                     </Card>
                 </Col>
                 <Col md={4}>
-                    <Card className="m-3" style={cardStyle}>
+                    <Card className={`m-3 ${cardStyle}`}>
                         <Card.Img variant="top" src={ultramanGeed} height={500} />
                         <Card.Body>
                             <Card.Title className="text-center">Ultraman Geed</Card.Title>
                         </Card.Body>
                     </Card>
-                    <Card className="m-3" style={cardStyle}>
+                    <Card className={`m-3 ${cardStyle}`}>
                         <Card.Img variant="top" src={ultramanRosso} height={500} />
                         <Card.Body>
                             <Card.Title className="text-center">Ultraman Rosso</Card.Title>
                         </Card.Body>
                     </Card>
-                    <Card className="m-3" style={cardStyle}>
+                    <Card className={`m-3 ${cardStyle}`}>
                         <Card.Img variant="top" src={ultramanBlu} height={500} />
                         <Card.Body>
                             <Card.Title className="text-center">Ultraman Blu</Card.Title>
@@ -259,19 +256,19 @@ const Gallery = ({ isNightMode }) => {
                     </Card>
                 </Col>
                 <Col md={4}>
-                    <Card className="m-3" style={cardStyle}>
+                    <Card className={`m-3 ${cardStyle}`}>
                         <Card.Img variant="top" src={ultramanTaiga} height={500} />
                         <Card.Body>
                             <Card.Title className="text-center">Ultraman Taiga</Card.Title>
                         </Card.Body>
                     </Card>
-                    <Card className="m-3" style={cardStyle}>
+                    <Card className={`m-3 ${cardStyle}`}>
                         <Card.Img variant="top" src={ultramanZ} height={500} />
                         <Card.Body>
                             <Card.Title className="text-center">Ultraman Z</Card.Title>
                         </Card.Body>
                     </Card>
-                    <Card className="m-3" style={cardStyle}>
+                    <Card className={`m-3 ${cardStyle}`}>
                         <Card.Img variant="top" src={ultramanBlazar} height={500} />
                         <Card.Body>
                             <Card.Title className="text-center">Ultraman Blazar</Card.Title>
@@ -283,4 +280,4 @@ const Gallery = ({ isNightMode }) => {
     )
 }
 
-export default Gallery
+export default React.memo(Gallery);

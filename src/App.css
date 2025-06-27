@@ -49,3 +49,19 @@
   font-weight: 400;
   font-style: normal;
 }
+
+body.night-mode {
+  background-color: #210F37;
+  color: white;
+}
+
+.card-night-mode {
+  background-color: #210F37 !important;
+  color: white !important;
+  border: none !important;
+}
+
+.comment-night-mode {
+    background-color: #210F37 !important;
+    color: white !important;
+}

@@ -1,5 +1,6 @@
 'use client';
 import { useEffect, useRef } from 'react';
+import React from "react"
 
 function SplashCursor({
   SIM_RESOLUTION = 128,
@@ -1205,4 +1206,4 @@ function SplashCursor({
   );
 }
 
-export default SplashCursor;
+export default React.memo(SplashCursor);
